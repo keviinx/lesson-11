@@ -29,8 +29,14 @@ class SUV(Car):
     def print_brand(self):
         print("The brand is "+ self.brand)
 
+class Van(Car):
+    def __init__(self, brand):
+        self.brand = brand
+
 
 tesla = ElectricCar("Tesla", "M3", "2020")
 tesla.drive()
 suv1 = SUV("BMW", "X5M", "Diesel")
 suv1.print_brand()
+van1 = Van("Mercedes")
+van1.drive()
